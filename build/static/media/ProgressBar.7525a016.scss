@@ -1,0 +1,25 @@
+.outter {
+  margin: auto;
+  width: 50%;
+  border: 2px solid green;
+  padding: 0px;
+}
+
+.progress, .progressbar {
+  min-height: 1.25rem;
+}
+
+.progressvalue {
+  position: absolute;
+  top: .0625rem;
+  right: .25rem;
+}
+
+.progress {
+  background-color: #FFFF;
+  position: relative;
+}
+
+.progressbar {
+  background-color: #43b7e1;
+}
