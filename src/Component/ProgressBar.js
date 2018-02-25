@@ -26,14 +26,19 @@ class ProgressBar extends Component {
           width: this.state.value + '%',
           maxWidth : this.state.max + '%',
           minWidth : this.state.min + '%',
-          backgroundColor : this.state.color
+          backgroundColor : this.state.color,
+          transition : '2s ease-in-out'
         };
 
+        var progressValueStyle = {
+
+        }
+        
         return (
         <div id="ProgressBar" className="outter">
           <div className="progress">
             <div className="progressbar" style={progressBarStyle}></div>
-            <span className="progressvalue">{this.state.value + '%'}</span>
+            <span className="progressvalue" stlye={progressValueStyle} >{this.state.value + '%'}</span>
           </div>
         </div>
         );
